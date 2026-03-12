@@ -3,166 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEAM·6 | GIT CORE</title>
-    
-    <!-- CSS terpisah -->
+    <title>TEAM SIX · GIT</title>
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Icons (tetap dari CDN) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <span class="logo">TEAM·6 · GIT</span>
+    <!-- cursor follower (modern touch) -->
+    <div class="cursor-follower"></div>
 
-            <div class="nav-links">
-                <a href="#" class="active">INDEX</a>
-                <a href="#">BRANCHES</a>
-                <a href="#">COMMITS</a>
-                <a href="#">MERGE</a>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-left">
+                <span class="logo">⟠ team·six</span>
+            </div>
+            <div class="nav-center">
+                <a href="#" class="nav-link active">repositories</a>
+                <a href="#" class="nav-link">pull requests</a>
+                <a href="#" class="nav-link">projects</a>
+                <a href="#" class="nav-link">team</a>
+            </div>
+            <div class="nav-right">
+                <span class="git-badge">git flow</span>
             </div>
         </div>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-content">
-            <span class="badge">
-                SOFTWARE ENGINEERING · DISTRIBUTED VERSION CONTROL
-            </span>
+    <main>
 
-            <h1>
-                GIT WORKFLOW.<br>
-                <span class="text-accent">TEAM·6</span> REPOSITORY.
-            </h1>
-
-            <p class="hero-description">
-                Four contributors. Isolated branches. Clean merges. 
-                Main branch protected. Feature branches per component.
-                Pull requests required. History linear.
-            </p>
-
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">4</span>
-                    <span class="stat-label">DEVS</span>
+        <!-- hero section - minimal, bold -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-tag">
+                    <span>software engineering · iteration v2.0</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">3</span>
-                    <span class="stat-label">BRANCHES</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">MAIN</span>
-                    <span class="stat-label">PROTECTED</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- REPO OVERVIEW -->
-    <section class="repo">
-        <div class="repo-card">
-            <h2>
-                <i class="fas fa-code-branch repo-icon"></i>
-                REPOSITORY STRUCTURE
-            </h2>
-
-            <p class="repo-description">
-                Central repository initialized for software engineering collaboration.
-                Feature branches isolate development work. Pull requests reviewed before
-                merging to main. Each team member responsible for specific component.
-            </p>
-
-            <div class="branch-tags">
-                <span class="branch-tag">main</span>
-                <span class="branch-tag">feature/ui</span>
-                <span class="branch-tag">feature/auth</span>
-                <span class="branch-tag">feature/db</span>
-                <span class="branch-tag">docs/update</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- TEAM GRID -->
-    <section class="team">
-        <h2 class="section-heading">CONTRIBUTORS</h2>
-        
-        <div class="team-grid">
-            <div class="member">
-                <div class="member-avatar">BV</div>
-                <h3>Berlian Veni</h3>
-                <p class="member-role">OWNER · AUTH</p>
-            </div>
-
-            <div class="member">
-                <div class="member-avatar">NL</div>
-                <h3>Nabila Latasya</h3>
-                <p class="member-role">UI · FRONTEND</p>
-            </div>
-
-            <div class="member">
-                <div class="member-avatar">HM</div>
-                <h3>Herman Manalu</h3>
-                <p class="member-role">DB · API</p>
-            </div>
-
-            <div class="member">
-                <div class="member-avatar">HH</div>
-                <h3>Hasnul Hilmi</h3>
-                <p class="member-role">DOCS · TEST</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- TASK STATUS -->
-    <section class="tasks">
-        <h2 class="section-heading">WORKFLOW</h2>
-        
-        <div class="task-container">
-            <div class="task">
-                <div class="task-marker">
-                    <i class="fas fa-check-circle task-done"></i>
-                    <span class="task-name">repository/init</span>
+                <h1>
+                    distributed version<br>
+                    <span class="outline-text">collaboration</span>
+                </h1>
+                <p class="hero-desc">
+                    Four engineers. One repository. Clean commits. 
+                    Feature branches, pull requests, and protected main.
+                    The way modern teams build software.
+                </p>
+                <div class="hero-meta">
+                    <div class="meta-item">
+                        <span class="meta-value">4</span>
+                        <span class="meta-label">contributors</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">12</span>
+                        <span class="meta-label">commits</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-value">3</span>
+                        <span class="meta-label">branches</span>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="task">
-                <div class="task-marker">
-                    <i class="fas fa-check-circle task-done"></i>
-                    <span class="task-name">collaborators/add</span>
+        <!-- stats bar - modern data display -->
+        <section class="stats">
+            <div class="stats-container">
+                <div class="stat-block">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-digit">main</span>
+                        <span class="stat-desc">protected branch</span>
+                    </div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-pull-request"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-digit">4</span>
+                        <span class="stat-desc">open PRs</span>
+                    </div>
+                </div>
+                <div class="stat-block">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-digit">100%</span>
+                        <span class="stat-desc">review coverage</span>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="task">
-                <div class="task-marker">
-                    <i class="fas fa-spinner task-pending"></i>
-                    <span class="task-name">feature/implementation</span>
+        <!-- repository overview - modern card -->
+        <section class="overview">
+            <div class="overview-card">
+                <div class="card-header">
+                    <h2>repository · team-six/git-collab</h2>
+                    <span class="header-badge">public</span>
+                </div>
+                <p class="card-text">
+                    Repository ini mengimplementasikan Git workflow untuk kolaborasi 
+                    software engineering. Setiap member bekerja di branch terpisah, 
+                    membuat pull request, dan melakukan code review sebelum merge ke main.
+                </p>
+                <div class="branch-cloud">
+                    <span class="branch-item">main</span>
+                    <span class="branch-item">feature/ui</span>
+                    <span class="branch-item">feature/auth</span>
+                    <span class="branch-item">feature/db</span>
+                    <span class="branch-item">hotfix/docs</span>
+                    <span class="branch-item">chore/deps</span>
                 </div>
             </div>
+        </section>
 
-            <div class="task">
-                <div class="task-marker">
-                    <i class="fas fa-hourglass-half task-pending"></i>
-                    <span class="task-name">pull-requests/review</span>
+        <!-- team section - modern grid with hover effects -->
+        <section class="team">
+            <div class="team-header">
+                <h2>core contributors</h2>
+                <span class="header-line"></span>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="member-avatar">BV</div>
+                        <h3>Berlian Veni</h3>
+                        <p class="member-title">repository owner · authentication</p>
+                        <div class="member-git">
+                            <span class="git-stat">
+                                <i class="far fa-clock"></i> 24 commits
+                            </span>
+                            <span class="git-stat">
+                                <i class="fas fa-code-branch"></i> 3 PRs
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="member-avatar">NL</div>
+                        <h3>Nabila Latasya</h3>
+                        <p class="member-title">frontend · UI architecture</p>
+                        <div class="member-git">
+                            <span class="git-stat">
+                                <i class="far fa-clock"></i> 31 commits
+                            </span>
+                            <span class="git-stat">
+                                <i class="fas fa-code-branch"></i> 4 PRs
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="member-avatar">HM</div>
+                        <h3>Herman Manalu</h3>
+                        <p class="member-title">database · API design</p>
+                        <div class="member-git">
+                            <span class="git-stat">
+                                <i class="far fa-clock"></i> 18 commits
+                            </span>
+                            <span class="git-stat">
+                                <i class="fas fa-code-branch"></i> 2 PRs
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team-card">
+                    <div class="card-bg"></div>
+                    <div class="card-content">
+                        <div class="member-avatar">HH</div>
+                        <h3>Hasnul Hilmi</h3>
+                        <p class="member-title">documentation · testing</p>
+                        <div class="member-git">
+                            <span class="git-stat">
+                                <i class="far fa-clock"></i> 15 commits
+                            </span>
+                            <span class="git-stat">
+                                <i class="fas fa-code-branch"></i> 2 PRs
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- FOOTER -->
+        <!-- workflow timeline - modern progress -->
+        <section class="workflow">
+            <div class="workflow-header">
+                <h2>current sprint · workflow</h2>
+                <span class="header-line"></span>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item completed">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-title">repository initialization</span>
+                        <span class="timeline-desc">README.md · .gitignore · license</span>
+                    </div>
+                    <span class="timeline-status">done</span>
+                </div>
+
+                <div class="timeline-item completed">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-title">add collaborators</span>
+                        <span class="timeline-desc">team members invited to repository</span>
+                    </div>
+                    <span class="timeline-status">done</span>
+                </div>
+
+                <div class="timeline-item active">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-title">feature implementation</span>
+                        <span class="timeline-desc">ui/auth/db branches in progress</span>
+                    </div>
+                    <span class="timeline-status">in progress</span>
+                </div>
+
+                <div class="timeline-item pending">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-title">pull request review</span>
+                        <span class="timeline-desc">code review and merge to main</span>
+                    </div>
+                    <span class="timeline-status">pending</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- git commands - modern terminal style -->
+        <section class="commands">
+            <div class="commands-container">
+                <div class="commands-header">
+                    <span class="dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </span>
+                    <span class="commands-title">git session</span>
+                </div>
+                <div class="commands-body">
+                    <div class="command-line">
+                        <span class="prompt">$</span>
+                        <span class="command">git checkout -b feature/modern-ui</span>
+                    </div>
+                    <div class="command-line">
+                        <span class="prompt">$</span>
+                        <span class="command">git commit -m "feat: implement modern dashboard"</span>
+                    </div>
+                    <div class="command-line">
+                        <span class="prompt">$</span>
+                        <span class="command">git push origin feature/modern-ui</span>
+                    </div>
+                    <div class="command-line">
+                        <span class="prompt">$</span>
+                        <span class="command">gh pr create --title "modern UI update" --fill</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer>
         <div class="footer-container">
-            <p>TEAM 6 · SOFTWARE ENGINEERING · GIT</p>
-            <div class="git-commands">
-                <code>git checkout -b feature</code>
-                <code>git commit -m "update"</code>
-                <code>git push origin</code>
+            <div class="footer-left">
+                <span class="footer-logo">⟠ team·six · 2025</span>
+            </div>
+            <div class="footer-center">
+                <span class="footer-command">git commit -m "collaboration"</span>
+            </div>
+            <div class="footer-right">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fas fa-code-branch"></i></a>
             </div>
         </div>
     </footer>
+
+    <script>
+        // simple cursor follower effect (modern touch)
+        const cursor = document.querySelector('.cursor-follower');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
+    </script>
 
 </body>
 </html>
